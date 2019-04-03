@@ -61,7 +61,7 @@ def all_winter_holiday_supplies(holiday_hash)
   # }
   # return an array of all of the supplies that are used in the winter season
   new_array = holiday_hash[:winter].values
-  new_array.flatten
+  new_array.flatten!
   new_array
 end
 
