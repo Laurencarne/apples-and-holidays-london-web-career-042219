@@ -101,6 +101,5 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.to_s.include?("BBQ")
     end
     new_array.vales
-    end
   end
 end
