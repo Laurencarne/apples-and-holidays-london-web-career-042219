@@ -73,7 +73,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  new_array = holiday_hash.to_s
+  holiday_hash.each do |key, value|
+    puts "#{key}: #{key}: #{value}"
 
 end
 
