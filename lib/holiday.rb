@@ -99,7 +99,6 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.collect do |season, holiday|
     holiday.select do |holiday, supplies|
       supplies.to_s.include?("BBQ")
-      holiday
     end
   end
 end
