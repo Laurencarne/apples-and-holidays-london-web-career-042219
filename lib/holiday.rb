@@ -100,6 +100,7 @@ def all_holidays_with_bbq(holiday_hash)
     new_array = holiday.select do |holiday, supplies|
       supplies.to_s.include?("BBQ")
     end
-    new_array.keys.flatten.compact
+    last_one = new_array.keys
+    last_one.flatten.compact
   end
 end
