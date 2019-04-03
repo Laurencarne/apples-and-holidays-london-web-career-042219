@@ -78,7 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{holiday.to_s.capitalize}:"
     holiday.collect do |event, supplies|
       puts "#{event}: #{supplies}"
-    
+
 end
 end
 
