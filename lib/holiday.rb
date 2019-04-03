@@ -74,6 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   new_array = holiday_hash.keys.to_s
+  new_array
 end
 end
 
