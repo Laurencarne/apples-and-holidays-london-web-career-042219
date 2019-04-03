@@ -99,8 +99,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.collect do |season, holiday|
     new_array = holiday.select do |holiday, supplies|
       supplies.to_s.include?("BBQ")
-          new_array.keys.flatten.compact
     end
-
   end
+          new_array.keys.flatten.compact
 end
