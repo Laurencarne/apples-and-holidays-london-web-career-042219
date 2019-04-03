@@ -97,7 +97,8 @@ def all_holidays_with_bbq(holiday_hash)
   # }
 
   holiday_hash.collect do |season, holiday|
-    new_array = holiday.select do |holiday, supplies|
+    holiday.collect do |holiday, supplies|
+      new_array = goliday.select
       supplies.to_s.include?("BBQ")
     end
   end
