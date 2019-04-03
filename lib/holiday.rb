@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
   #     :memorial_day => ["BBQ"]
   #   }
   # }
-  holiday_hash.each do |key, value|
+  holiday_hash.collect do |key, value|
     puts "#{key.to_s.capitalize.chomp}:"
 end
 end
