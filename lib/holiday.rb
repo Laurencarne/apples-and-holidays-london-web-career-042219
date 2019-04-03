@@ -95,12 +95,12 @@ def all_holidays_with_bbq(holiday_hash)
   #     :memorial_day => ["BBQ"]
   #   }
   # }
+  
   holiday_hash.collect do |season, holiday|
-    holiday.collect do |holiday, supplies|
-      if supplies.to_s.include?("BBQ")
-        new_array = []
-        new_array.push(holiday)
-      end
+    holiday.select do |holiday, supplies|
+      supplies.to_s.include?("BBQ")
+      new_array = []
+      new_array.push(holiday)
     end
   end
 end
